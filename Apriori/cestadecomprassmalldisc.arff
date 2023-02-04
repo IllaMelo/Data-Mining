@@ -1,0 +1,37 @@
+@relation cestadecomprassmalldisc
+
+@attribute Item1 {Leite,Café,Cerveja,Pão,Manteiga,Arroz,Feijão}
+@attribute Item2 {Leite,Café,Cerveja,Pão,Manteiga,Arroz,Feijão}
+@attribute Item3 {Leite,Café,Cerveja,Pão,Manteiga,Arroz,Feijão}
+@attribute Item4 {Leite,Café,Cerveja,Pão,Manteiga,Arroz,Feijão}
+
+@data
+Café,Pão,Manteiga,?
+Leite,Cerveja,Pão,Manteiga
+Café,Pão,Manteiga,?
+Leite,Café,Pão,Manteiga
+Cerveja,?,?,?
+Manteiga,?,?,?
+Pão,?,?,?
+Feijão,?,?,?
+Arroz,Feijão,?,?
+Arroz,?,?,?
+Café,Pão,?,?
+Café,Pão,?,?
+Café,Pão,?,?
+Café,Pão,?,?
+Pão,Manteiga,?,?
+Pão,Manteiga,?,?
+Pão,Manteiga,?,?
+Leite,?,Pão,Manteiga
+Leite,?,Pão,Manteiga
+Leite,?,Pão,Manteiga
+Leite,?,Pão,Manteiga
+Leite,?,Pão,Manteiga
+Leite,Café,Pão,Manteiga
+Leite,Café,?,?
+Leite,Café,?,?
+Leite,Café,?,?
+
+
+

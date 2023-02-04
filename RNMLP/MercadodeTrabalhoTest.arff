@@ -1,0 +1,7 @@
+% Predizer o salário de um mestre formado pela universidade após 10 % anos de experiência
+@relation 'MercadodeTrabalhoTest'
+@attribute TempodeExperiencia real
+@attribute Salario real
+@data
+10,99
+30,99

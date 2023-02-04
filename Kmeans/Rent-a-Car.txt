@@ -1,0 +1,89 @@
+@relation Rent-a-car
+
+@attribute Nome 
+@attribute Portas numeric
+@attribute Ocupantes numeric
+@attribute Ar {Sim, Nao}
+@attribute Direcao {Eletrica, Hidraulica, Mecanica}
+@attribute Cambio {Automatico, Manual}
+@attribute TrioEletrico {Sim, Nao}
+@attribute AirBag {Sim, Nao}
+@attribute FreioABS {Sim, Nao}
+@attribute Som {CD, DVD, BD, RADIO}
+@attribute MalasPequenas numeric
+@attribute MalasMedias numeric
+ 
+Econômico
+
+Chevrolet Aveo,2,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,0,2
+Chevrolet Sonic,4,5,Sim,Hidraulica,Automatico,Sim,Nao,Nao,CD,3,3
+
+Compacto
+
+Chevrolet Cruze,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,Radio,2,3
+Ford Focus,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,Radio,1,2
+Ford Fiesta,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,Radio,1,2
+Nissan Versa,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,Radio,1,2
+
+Standard
+
+Ford Fusion,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,Radio,4,5
+Nissan Altima,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,Radio,4,5
+Jetta,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,Radio,4,5
+
+Intermediário
+
+Chrysler 200,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,3
+Dodge Avenger,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,3
+
+Full-Size
+
+Cadilac ATS,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,2
+Chevrolet Impala,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+Chevrolet Malibu,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+Hyundai Sonata,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+
+Premium
+
+BMW Series3,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,3
+Cadilac DTS,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,3
+Infinit G37,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,3
+Lincon MKS,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,3
+
+Especial
+
+BMW 328,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,2
+BMW 528,4,5,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,3,2
+
+Suv
+
+Cadilac Escalade,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,3
+Chevrolet Silverado,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,3
+Ford Expedition,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,2,5 
+
+Minivan
+
+Chrysler Town and Country,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+Dodge Grand Caravan,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+Toyota Sienna,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+VW Routan,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+Ford Flex,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+Dodge Jouney,4,7,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,4,5
+
+Van
+
+Ford Club Wagon,4,12,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,5,8
+Ford E350,4,12,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,5,8
+Ford Explorer,4,12,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,5,8
+Chevrolet Traverse,4,12,Sim,Hidraulica,Automatico,Sim,Sim,Sim,CD,5,8
+
+Conversível
+
+Chevrolet Camaro,2,4,Sim,Hidraulica,Manual,Sim,Sim,Sim,CD,2,3
+Corvette Convertible,2,4,Sim,Hidraulica,Manual,Sim,Sim,Sim,CD,2,3
+
+Luxo
+
+Audi R8,2,4,Sim,Hidráulica,Automatico,Sim,Sim,Sim,CD,2,3
+Mercedes C350,2,4,Sim,Hidráulica,Automatico,Sim,Sim,Sim,CD,2,3
+

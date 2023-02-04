@@ -1,0 +1,8 @@
+Local, Estado, Idade, Tipo, Area, Garagem ,Classe
+Leblon,Bom,30,Apartamento,156,Sim,Bom
+Tijuca,Bom,31,Casa,125,Sim,Mmau
+Copacabana,Bom,35,Apartamento,170,Sim,Bom
+Barra,Bom,30,Apartamento,182,Sim,Bom
+Copacabana,Mau,35,Apartamento,40,Nao,Mau
+Tijuca,Bom,11,Casa,125,Sim,Regular
+Barra,Bom,10.5,Apartamento,182,Sim,Regular

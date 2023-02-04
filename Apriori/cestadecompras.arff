@@ -1,0 +1,51 @@
+@relation cestadecompras
+
+@attribute Leite    {Sim, Não}
+@attribute Café     {Sim, Não}
+@attribute Cerveja  {Sim, Não}
+@attribute Pão      {Sim, Não}
+@attribute Manteiga {Sim, Não}
+@attribute Arroz    {Sim, Não}
+@attribute Feijão   {Sim, Não}
+
+@data
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Não,Sim,Sim,Sim,Não,Não
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Sim,Não,Sim,Sim,Não,Não
+Não,Não,Sim,Não,Não,Não,Não
+Não,Não,Não,Não,Sim,Não,Não
+Não,Não,Não,Sim,Não,Não,Não
+Não,Não,Não,Não,Não,Não,Sim
+Não,Não,Não,Não,Não,Sim,Sim
+Não,Não,Não,Não,Não,Sim,Não
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Não,Sim,Sim,Sim,Não,Não
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Sim,Não,Sim,Sim,Não,Não
+Não,Não,Sim,Não,Não,Não,Não
+Não,Não,Não,Não,Sim,Não,Não
+Não,Não,Não,Sim,Não,Não,Não
+Não,Não,Não,Não,Não,Não,Sim
+Não,Não,Não,Não,Não,Sim,Sim
+Não,Não,Não,Não,Não,Sim,Não
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Não,Sim,Sim,Sim,Não,Não
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Sim,Não,Sim,Sim,Não,Não
+Não,Não,Sim,Não,Não,Não,Não
+Não,Não,Não,Não,Sim,Não,Não
+Não,Não,Não,Sim,Não,Não,Não
+Não,Não,Não,Não,Não,Não,Sim
+Não,Não,Não,Não,Não,Sim,Sim
+Não,Não,Não,Não,Não,Sim,Não
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Não,Sim,Sim,Sim,Não,Não
+Não,Sim,Não,Sim,Sim,Não,Não
+Sim,Sim,Não,Sim,Sim,Não,Não
+Não,Não,Sim,Não,Não,Não,Não
+Não,Não,Não,Não,Sim,Não,Não
+Não,Não,Não,Sim,Não,Não,Não
+Não,Não,Não,Não,Não,Não,Sim
+Não,Não,Não,Não,Não,Sim,Sim
+Não,Não,Não,Não,Não,Sim,Não

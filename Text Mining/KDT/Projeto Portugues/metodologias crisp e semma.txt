@@ -1,0 +1,1064 @@
+Página 12 Processo de Mineração de Dados
+A fim de realizar a análise de dados de forma sistemática mineração, um processo geral é
+geralmente seguido. Existem alguns processos padrão, dois dos quais são de-
+descrito neste capítulo. Um (CRISP) é um processo padrão da indústria consistem-
+ção de uma seqüência de etapas que são geralmente envolvidos em um estudo de mineração de dados.
+O outro (SEMMA) é específico para o SAS. Embora cada passo de cada abordagem
+não é necessário em todas as análises, este processo fornece uma boa cobertura do
+passos necessários, começando com exploração de dados, coleta de dados, processamento de dados,
+análise, inferências e implementação.
+CRISP-DM
+Há um processo Cruz padrão da indústria para Data Mining (CRISP-DM)
+amplamente utilizado por membros da indústria. Este modelo é composto por seis fases em-
+tendido como um processo cíclico (ver Fig. 2.1.):
+Empresas compreensão compreensão do negócio inclui a determinação
+objetivos de negócios, avaliando a situação atual, o estabelecimento de dados
+metas de mineração e desenvolvimento de um plano de projeto.
+Entendimento de dados
+Uma vez que os objetivos de negócios eo plano de projeto são
+estabelecido, a compreensão de dados considera os requisitos de dados. Esta etapa
+pode incluir a coleta inicial de dados, descrição de dados, exploração de dados, e
+a verificação da qualidade dos dados. Exploração de dados, tais como a visualização
+estatísticas de resumo (que inclui a exibição visual do categórica
+variáveis) pode ocorrer no final desta fase. Modelos como aglomerado
+A análise pode também ser aplicada durante esta fase, com a intenção de
+identificar padrões nos dados.
+Preparação de dados
+Uma vez que os recursos de dados disponíveis são identificados, eles
+precisam ser selecionados, limpos, construído na forma desejada, e formatado.
+Limpeza de dados e transformação de dados em preparação de modelagem de dados
+deve ocorrer nesta fase. Exploração de dados em maior profundidade pode ser
+aplicado durante esta fase, e modelos adicionais utilizados, novamente fornecendo
+a oportunidade de ver padrões baseados em entendimento do negócio.
+
+Página 210 2 Processo de Mineração de Dados
+Fontes de Dados
+Negócio
+Entendimento
+Dados
+Preparação
+Modelo
+Edifício
+Testes e
+Avaliação
+Desenvolvimento
+Dados
+Entendimento
+Fig. 2.1. Processo CRISP-DM
+Modelagem
+De mineração de dados de ferramentas de software, tais como visualização (plotagem
+dados e relações que estabelecem) e análise de agrupamento (para identificar
+quais variáveis ??vão bem juntos) são úteis para a análise inicial. Ferramentas
+como a indução regra generalizada pode desenvolver regras de associação iniciais.
+Uma vez que uma maior compreensão dos dados é adquirida (muitas vezes através de padrão
+reconhecimento desencadeada por ver a saída do modelo), os modelos mais detalhados
+apropriado para o tipo de dados pode ser aplicada. A divisão dos dados em
+conjuntos de treinamento e teste também é necessário para a modelagem.
+Avaliação
+Os resultados do modelo deve ser avaliada no contexto da
+objetivos de negócios estabelecidos na primeira fase (de negócios
+compreensão). Isto irá levar à identificação de outras necessidades (frequentemente
+através do reconhecimento de padrões), freqüentemente reverter para as fases anteriores do
+CRISP-DM. Ganhando entendimento do negócio é um processo iterativo em
+mineração de dados, onde os resultados de visualização diferentes, estatística, e
+ferramentas de inteligência artificial mostrar ao usuário novas relações que fornecem
+uma compreensão mais profunda das operações organizacionais.
+Implantação de mineração de dados pode ser usado tanto para verificar previamente realizada
+hipóteses, ou para descoberta de conhecimento (identificação dos inesperado
+e relações úteis). Através do conhecimento descoberto no
+fases anteriores do processo CRISP-DM, os modelos de som podem ser obtidas
+
+Página 3CRISP-DM 11
+que podem então ser aplicados a operações comerciais para muitas finalidades,
+incluindo previsão ou identificação de situações-chave. Estes modelos
+precisa de ser acompanhada por mudanças nas condições de operação, uma vez que
+pode ser verdade hoje pode não ser verdade daqui a um ano. Se significativa
+mudanças ocorrem, o modelo deve ser refeito. Também é sábio para gravar
+os resultados de projetos de mineração de dados para que evidência documentada está disponível
+para estudos futuros.
+Este processo de seis fases não é rígida, o procedimento de by-the-números. Não há
+normalmente uma grande quantidade de retrocesso. Além disso, analistas experientes
+pode não precisar aplicar cada fase para cada estudo. Mas CRISP-DM pro-
+vides uma estrutura útil para mineração de dados.
+Entendimento negócio
+O elemento chave de um estudo de mineração de dados é saber o que o estudo é para.
+Isso começa com uma necessidade de gestão de novos conhecimentos, e uma expressão
+do objetivo do negócio sobre o estudo a ser realizado. Gols em
+termos de coisas como "Que tipos de clientes estão interessados ??em cada um dos
+os nossos produtos? "ou" O que são perfis típicos de nossos clientes, e como
+muito valor que cada um deles fornece para nós? "são necessários. Em seguida, um plano para
+encontrar tal conhecimento precisa ser desenvolvido, em termos de os responsáveis
+para coleta de dados, análise de dados e geração de relatórios. Nesta fase, um orçamento para
+apoiar o estudo deve ser estabelecido, pelo menos em termos preliminares.
+Em modelos de segmentação de clientes, tais como catálogo de varejo Fingerhut de negó-
+dade, a identificação de um objectivo comercial significava que identifica o tipo de
+cliente que seria de esperar para um retorno rentável. A mesma coisa
+análise é útil para os distribuidores de cartão de crédito. Para fins comerciais de supermercado,
+lojas costumam tentar identificar quais itens tendem a ser comprados juntos por isso
+pode ser utilizado para o posicionamento de afinidade dentro da loja, ou para orientar de forma inteligente
+campanhas promocionais. A mineração de dados tem muitas aplicações comerciais úteis,
+alguns dos quais serão apresentados ao longo do curso do livro.
+Entendimento de dados
+Desde mineração de dados é orientada por tarefas, tarefas de negócios diferentes requerem diferentes-
+ent os conjuntos de dados. A primeira etapa do processo de extracção de dados é seleccionar o
+dados relacionados de muitos bancos de dados disponíveis para descrever corretamente um dado
+tarefa de negócio. Há pelo menos três questões a serem consideradas nos dados se-
+lição. A primeira questão é a criação de uma descrição concisa e clara do
+problema. Por exemplo, um projeto de mineração de dados de varejo pode procurar identificar
+
+Página 412 2 Processo de Mineração de Dados
+gastar comportamentos de compradores do sexo feminino que compram roupas sazonais.
+Outro exemplo pode tentar identificar padrões de falência de cartão de crédito
+titulares. A segunda questão seria para identificar os dados relevantes para o
+descrição do problema. Cartão de crédito mais demográfico, transacional e
+dados financeiros poderia ser relevante para varejo e falência de cartão de crédito
+projetos. No entanto, os dados de gênero podem ser proibidas para uso por lei para a
+último, mas ser legal e ser importante para o primeiro. A terceira questão é
+que as variáveis ??selecionadas para os dados pertinentes devem ser independentes entre si
+outro. Independência variável significa que as variáveis ??não contêm mais de-
+polimento informações. Uma cuidadosa seleção de variáveis ??independentes pode
+torná-lo mais fácil para os algoritmos de mineração de dados para descobrir rapidamente útil
+padrões de conhecimento.
+Fontes de dados para seleção de dados pode variar. Normalmente, os tipos de dados
+fontes para aplicações de negócios incluem dados demográficos (como em-
+vêm, escolaridade, número de famílias, e idade), sócio-gráficos de dados
+(Tais como hobby, clube e entretenimento), dados transacionais
+(Registros de vendas, os gastos do cartão de crédito, cheques emitidos), e assim por diante. Os dados
+tipo podem ser classificados como dados quantitativos e qualitativos. Quantitativa
+dados é mensurável utilizando valores numéricos. Ela pode ser tanto discreta (tal
+como inteiros) ou contínuas (como números reais). dados qualitativos, também
+conhecido como dados categóricos, contém dados nominais e ordinais. Nomi-
+dados nal tem finitos não-ordenados valores, tais como dados de gênero, que tem dois
+valores: masculino e feminino. Dados ordinais finitos tem valores ordenados. Por exem-
+PLE, ratings de crédito dos clientes são considerados dados ordinais desde as classificações
+pode ser excelente, justo e ruim. Os dados quantitativos podem ser facilmente representados
+por algum tipo de distribuição de probabilidade. A distribuição de probabilidade de-
+escribas como os dados são dispersos e em forma. Por exemplo, normalmente dis-
+dados distribu?dos é simétrica, e é comumente referido como forma de sino.
+Os dados qualitativos podem ser codificados para números primeiro e, em seguida, ser descrita por
+distribuições de freqüência. Uma vez que os dados relevantes são selecionados de acordo com a
+mineração de dados de negócios objetivo, pré-processamento de dados deve ser perseguido.
+O objetivo da pré-processamento de dados é limpar dados selecionados para uma melhor quali-
+dade. Alguns dados selecionados podem ter formatos diferentes porque são cho-
+sen a partir de diferentes fontes de dados. Se os dados selecionados são de arquivos simples, voz
+da mensagem, e o texto da web, que deve ser convertida para uma electrónica consistente
+formato. Em geral, limpeza de dados significa para filtrar, agregado e preencher
+valores em falta (imputação). Com a filtragem de dados, os dados selecionados são-exame
+INED para outliers e redundâncias. Outliers diferem muito da maioria
+Preparação de dados
+
+Página 5CRISP-DM 13
+de dados, ou dados que são claramente fora do alcance dos grupos de dados selecionados. Para
+exemplo, se a renda de uma cliente incluída na classe média é
+$ 250.000, é um erro e deve ser levado para fora da mineração de dados pro-
+ject que analisa os vários aspectos da classe média. Outliers podem ser
+causada por muitas razões, tais como erros humanos ou erros técnicos, ou pode
+ocorrem naturalmente em um conjunto de dados devido a eventos extremos. Suponha que a idade de um
+titular do cartão de crédito é registrado como "12". Este é provavelmente um erro humano. Como
+nunca, pode realmente ser um rico e independente pré-adolescente com im-
+portantes hábitos de compra. Arbitrariamente apagar este outlier pode demitir
+informação valiosa.
+Os dados redundantes são a mesma informação gravada em vários diferentes
+maneiras. As vendas diárias de um determinado produto são redundantes com as vendas sazonais de
+o mesmo produto, pois podemos derivar as vendas tanto de dados diários ou
+dados sazonais. Por os dados de agregação, as dimensões dos dados são reduzidos para se obter
+informações agregadas. Note que, embora um conjunto de dados tem um agregado
+o volume pequeno, a informação é mantida. Se uma promoção de marketing para
+vendas de móveis é considerada nos próximos 3 ou 4 anos, então o disponível
+dados de vendas diárias podem ser agregados como dados de vendas anuais. O tamanho das vendas
+os dados são drasticamente reduzidos. Por dados de alisamento, os valores ausentes do SE-
+dados selecionado são encontrados e novos valores ou razoável, então, acrescentou. Estes
+valores adicionados pode ser o número médio da variável (média) ou o
+modo. Um valor ausente muitas vezes provoca nenhuma solução quando um data-mining algo-
+logaritmo é aplicada para descobrir os padrões de conhecimento.
+Os dados podem ser expressos de várias formas diferentes. Por exemplo, em
+CLEMENTINE, os seguintes tipos de dados podem ser usadas.
+Os valores numéricos (inteiro, real, ou Data / Hora).
+Binário BANDEIRA - Sim / Não, 0/1, ou outros dados com dois resultados (texto,
+inteiro, número real, ou de data / hora).
+Conjunto de dados com múltiplos valores distintos (numéricos, string ou data / hora).
+Typeless Para outros tipos de dados.
+Geralmente pensamos de dados como números reais, tais como a idade em anos ou anual
+renda em dólares (usaríamos RANGE nesses casos). Às vezes, vari-
+veis ocorrer tanto / ou tipos, tais como ter uma carteira de motorista ou não, ou
+uma reivindicação de seguro serem fraudulentos ou não. Este caso pode ser tratado
+usando verdadeiros valores numéricos (por exemplo, 0 ou 1). Mas é mais eficiente para
+tratá-los como variáveis ??bandeira. Muitas vezes, é mais adequado para lidar com
+dados categóricos, como a idade em termos do conjunto {jovens, de meia-idade, eld-
+Erly}, ou renda no conjunto {baixo, médio, alto}. Nesse caso, poderíamos
+agrupar os dados e atribuir a categoria adequada em termos de um texto,
+
+Página 614 2 Processo de Mineração de Dados
+Como outro exemplo, PolyAnalyst tem os seguintes tipos de dados disponíveis:
+Valores numéricos contínuos
+Inteiros valores inteiros
+Sim / não há dados binários
+Categoria Um conjunto finito de valores possíveis
+Data
+Corda
+Texto
+Cada ferramenta de software terá um esquema de dados diferentes, mas o principal
+tipos de dados tratados são representadas nessas duas listas.
+Há muitos métodos estatísticos e ferramentas de visualização que podem ser
+usado para preprocess os dados selecionados. Estatísticas comuns, como max, min,
+Quer dizer, e modo pode ser facilmente utilizado para agregar ou suavizar os dados, enquanto
+gráficos de dispersão e gráficos de caixa são normalmente utilizados para valores extremos de filtro. Mais ad-
+técnicas avançadas (incluindo análises de regressão, análise de agrupamento, de decisão
+árvore, ou análise hierárquica) pode ser aplicado em pré-processamento de dados dependerá-
+ção sobre as exigências para a qualidade dos dados seleccionados. Como os dados
+pré-processamento é detalhado e tedioso, que exige uma grande quantidade de tempo. Em
+Nalguns casos, o pré-processamento de dados pode levar mais de 50% do tempo de todo o
+dados do processo de mineração. Encurtar o tempo de processamento de dados pode reduzir muito
+o tempo de computação total em mineração de dados. Os dados simples e padrão
+formato resultante a partir de pré-processamento de dados pode fornecer um ambiente de in-
+partilha de formação em diferentes sistemas de computador, que cria o
+flexibilidade para implementar vários algoritmos de mineração de dados ou ferramentas.
+Como um componente importante da preparação de dados, é a transformação de dados
+utilizar formulações matemáticas simples ou curvas de aprendizagem para converter diferen-
+rentes medidas de selecionada e limpa, dados em um numérica unificada
+escala para efeitos de análise de dados. Muitas estatísticas disponíveis medida
+mentos, tais como a mediana, média, modo, e variação pode facilmente ser usado para
+transformar os dados. Em termos da representação dos dados, os dados transfor-
+ção pode ser utilizado para (1) a partir de transformar numérico para escalas numéricas, e
+(2) recodificar dados categóricos para escalas numéricas. Para numérica para numérica
+escalas, podemos usar uma transformação matemática para "encolher" ou "ampliar"
+os dados indicados. Uma razão para a transformação é o de eliminar as diferenças de
+escalas variáveis. Por exemplo, se o atributo "salário" varia de
+utilizando um conjunto. A forma mais completa é o alcance, mas às vezes os dados não
+não entrar em forma para que os analistas são forçados a usar SET ou tipos de bandeira.
+Às vezes, pode realmente ser mais preciso para lidar com tipos de dados SET
+que tipos de dados de alcance.
+
+Página 7CRISP-DM 15
+"20.000 dólares" para "100 mil dólares", podemos usar a fórmula S = (x - min) / (max -
+min) para "encolher" qualquer valor do salário conhecido, digamos, US $ 50.000 para 0,6, um número em
+[0.0, 1.0]. Se a média de salário é dado como US $ 45.000, eo desvio-padrão
+é dado como 15.000 dólares, os R $ 50.000 pode ser normalizado como 0,33. Transformar
+dados do sistema de métrica (por exemplo, metros, km) para Inglês sistema
+(Por exemplo, pé, e milha) é outro exemplo. Para categórico ao numérica
+escalas, temos que atribuir um número apropriado numérica a um categórico
+valor de acordo com as necessidades. As variáveis ??categóricas pode ser ordinal (como
+menos, moderada e forte) e nominal (como vermelho, amarelo, azul e
+verde). Por exemplo, uma variável binária {yes, no} pode ser transformado em
+"1 = sim e 0 = não." Note-se que a transformação de um valor numérico para uma orde-
+valor nal significa transformação com a ordem, enquanto a transformação para uma nomi-
+valor nal é uma transformação menos rígida. Precisamos ter cuidado para não intro-
+zir mais precisão do que está presente nos dados originais. Por exemplo, a
+Escalas de Likert, muitas vezes representam a informação ordinal com números codificados (1-7,
+1-5, e assim por diante). No entanto, estes números não costumam implicar uma comum
+escala de diferença. Um objeto classificado como 4 não pode ser feito para ser duas vezes tão
+forte em alguma medida como um objeto classificado como 2. Às vezes, pode-se aplicar
+valores para representar um bloco de números ou de uma série de variáveis ??categóricas.
+Por exemplo, podemos usar "1" para representar os valores monetários a partir de "$ 0"
+com "20.000 dólares", e use "2" para "$ 20.001 - US $ 40.000," e assim por diante. Podemos usar
+"0001" para representar "casa de dois loja" e "0002" para "um-e-meia-store
+casa. "Todos os tipos de" rápida e suja "métodos podem ser usados ??para transformar
+dados. Não existe um procedimento único e, o único critério é o de transformar
+os dados para a conveniência de utilização durante a fase de extracção de dados.
+Modelagem
+A modelagem de dados é que o software de mineração de dados é usada para gerar re-
+sultados para várias situações. A análise de cluster e exploração visual do
+dados são normalmente aplicados em primeiro lugar. Dependendo do tipo de dados, diversos
+modelos podem então ser aplicada. Se a tarefa é agrupar os dados, e os grupos
+são dados, análise discriminante pode ser apropriada. Se o objetivo é es-
+mula, a regressão é apropriado se os dados é contínua (e logística
+se não regressão). As redes neurais podem ser aplicadas para ambas as tarefas.
+As árvores de decisão são mais uma ferramenta para classificar os dados. Outras ferramentas de modelagem
+também estão disponíveis. Nós vamos cobrir esses modelos diferentes em maior detalhe no
+capítulos subseqüentes. O ponto de dados de software de mineração é o de permitir ao utilizador
+para trabalhar com os dados para obter entendimento. Isso é muitas vezes fomentada pela
+iterativo uso de múltiplos modelos.
+
+Página 816 2 Processo de Mineração de Dados
+Tratamento de dados
+A mineração de dados é essencialmente a análise de dados estatísticos, geralmente usando
+dados enormes define. O processo padrão de mineração de dados é de aproveitar esta
+grande conjunto de dados e dividi-lo, utilizando uma porção dos dados (conjunto de treino)
+para o desenvolvimento do modelo (não importa o que é técnica de modelagem
+utilizado), e reservando uma parte dos dados (o conjunto de teste) para testar o modelo
+que é construído. Em algumas aplicações, a divisão de dados de terceira (conjunto de validação) é usado
+para estimar os parâmetros a partir dos dados. O princípio é que se você construir uma
+modelo de um conjunto particular de dados, será claro testar muito bem. Ao dividir
+os dados e usando parte dela para o desenvolvimento do modelo, e testá-lo em uma sepa-
+conjunto de taxa de dados, um teste mais convincente de precisão do modelo é obtido.
+Essa idéia de divisão dos dados em componentes é muitas vezes levada a adi-
+níveis internacionais na prática da mineração de dados. Porções adicionais de dados pode
+ser utilizado para refinar o modelo.
+Técnicas de Mineração de Dados
+A mineração de dados pode ser alcançado por associação, classificação, clustering,
+Previsões, padrões seqüenciais, e as seqüências de tempo semelhantes.
+1
+Na Associação, a relação de um determinado item em uma transação de dados
+em outros itens na mesma transação é usado para prever os padrões. Para ex-
+ampla, se um cliente compra um PC portátil (X), então ele ou ela também compra um
+rato (Y), em 60% dos casos. Este padrão ocorre em 5,6% dos PC portátil
+compras. Uma regra de associação nesta situação pode ser "X implica Y, onde
+60% é o fator de confiança e de 5,6% é o fator de suporte. "Quando o
+fator de confiança e fator de suporte são representados por variáveis ??lingüísticas
+"Alto" e "baixo", respectivamente, a regra de associação pode ser escrito na
+forma lógica fuzzy, tais como: "onde o fator de suporte é baixo, X implica Y é
+alta. "No caso de muitas variáveis ??qualitativas, de associação fuzzy é uma ne-
+cessário e promissora técnica em mineração de dados.
+ções que mapeiam cada item dos dados seleccionados para um de um conjunto pré-definido de
+classes. Dado o conjunto de classes predefinidas, um certo número de atributos, e um
+"Aprendizagem (ou treinamento) conjunto," os métodos de classificação pode automaticamente
+predizer a classe de outros dados não classificados do conjunto de aprendizagem. Dois chave
+problemas de pesquisa relacionados com os resultados de classificação são a avaliação de
+erros de classificação e poder de predição. Técnicas matemáticas que são
+muitas vezes utilizados para a construção de métodos de classificação são árvores de decisão binárias,
+1
+DL Olson, Shi Yong (2007) Introdução à Mineração de Dados de Empresas, Boston.:
+McGraw-Hill/Irwin.
+Na classificação, os métodos são destinados para a aprendizagem de diferentes fun-
+redes neurais, programação linear, e estatísticas. Usando binário
+
+Página 9CRISP-DM 17
+A análise de agrupamento tem dados desagrupados e utiliza técnicas automáticas para
+colocar esses dados em grupos. Agrupamento não supervisionado, e não requer um
+aprendizado conjunto. Ele compartilha um terreno comum metodológico com Classificação.
+Em outras palavras, a maioria dos modelos matemáticos mencionado anteriormente re-
+gards a classificação pode ser aplicada a análise de agrupamento, bem.
+Análise de previsão está relacionada com técnicas de regressão. A idéia principal da
+análise de previsão é descobrir a relação entre a variável dependente
+e variáveis ??independentes, a relação entre a variável independente
+veis (um contra outro, um contra o resto, e assim por diante). Por exemplo, se
+vendas é uma variável independente, então o lucro pode ser uma variável dependente.
+Ao usar dados históricos de vendas e de lucro, linear ou nonlin-
+técnicas de regressão de ouvido podem produzir uma curva de regressão ajustada, que pode ser
+usados ??para a previsão de lucro no futuro.
+árvores de decisão, um modelo de indução de árvores com um "sim-não" formato pode ser construído
+para dividir os dados em diferentes classes de acordo com seus atributos. Modelos apto para
+de dados pode ser medida por qualquer uma das estimativas de informações de estatística ou en-
+entropia. No entanto, a classificação obtida a partir de indução de árvores pode não
+produzir uma solução óptima em que o poder de predição é limitado. Usando
+redes neurais, um modelo de indução neural pode ser construída. Nesta abordagem,
+os atributos tornam-se as camadas de entrada na rede neural, enquanto as classes
+associado com dados de saída são camadas. Entre as camadas de entrada e de saída
+camadas, há um maior número de camadas escondidas processando a precisão
+da classificação. Embora o modelo de indução neural muitas vezes produz apostar-
+alcançar melhores resultados em muitos casos de mineração de dados, uma vez que as relações envolvem
+complexas relações não-lineares, em aplicação desse método é difícil
+quando há um grande conjunto de atributos. Em abordagens de programação linear,
+o problema de classificação é visto como uma forma especial de programa linear.
+Dado um conjunto de classes e um conjunto de variáveis ??de atributo, pode-se definir um cut-
+fora do limite (ou fronteira) que separa as classes. Em seguida, cada classe é represen-
+tantes através de um grupo de limitações no que diz respeito a um limite no linear
+programa. A função objetivo do modelo de programação linear pode
+minimizar a taxa de sobreposição entre as classes e maximizar a distância
+entre as classes. Os resultados de programação linear abordagem numa óptima
+classificação. No entanto, o tempo de cálculo necessário pode ser superior à de
+abordagens estatísticas. Vários métodos estatísticos, tais como linear dis-
+dominante de regressão, regressão quadrática discriminante e logístico dis-
+regressão dominante são muito populares e são comumente usados ??em negócio real
+classificações. Mesmo que o software estatístico foi desenvolvida para
+lidar com uma grande quantidade de dados, métodos estatísticos têm uma desvantagem
+em forma eficiente os problemas multiclasse separam em que um de pares com-
+filho (isto é, uma classe contra o resto das classes) tem de ser adoptado.
+
+Página 1018 2 Processo de Mineração de Dados
+Uma análise padrão sequencial procura encontrar padrões semelhantes em dados tran-
+ção durante um período de negócio. Esses padrões podem ser utilizados por empresas ana-
+lysts para identificar as relações entre os dados. Os modelos matemáticos
+extensão de padrões seqüenciais, sequências de tempo similares são aplicadas para dis-
+cobrir seqüências similares a uma sequência conhecida ao longo do passado e do atual
+períodos de negócios. Na fase de extracção de dados, várias sequências semelhantes podem ser
+estudados para identificar as tendências futuras no desenvolvimento transação. Esta abordagem é
+útil para lidar com bancos de dados que têm de séries temporais características.
+A etapa de interpretação dos dados é muito crítico. Assimila conhecimento de
+minado de dados. Duas questões são essenciais. Uma delas é como reconhecer o negócio
+valor a partir de padrões de conhecimento descoberto em fase de mineração de dados. Outro
+questão é qual ferramenta de visualização deve ser usado para mostrar a mineração de dados re-
+tados. Determinar o valor de negócio a partir de padrões de conhecimento descoberto é
+semelhante ao jogo "quebra-cabeças." Os dados extraídos é um quebra-cabeça que precisa ser colocado
+juntos por um propósito comercial. Esta operação depende da interacção
+entre os analistas de dados, analistas de negócios e tomadores de decisão (como homem
+gestores ou executivos). Porque os analistas de dados podem não estar plenamente conscientes do propósito
+da meta de mineração de dados ou objetivo, e enquanto os analistas de negócio não pode
+compreender os resultados de matemática sofisticada soluções de interação,
+entre eles é necessário. A fim de interpretar corretamente o conhecimento pa-
+andorinhas, é importante a escolha de uma ferramenta de visualização apropriada. Muitos visu-
+zação pacotes e ferramentas estão disponíveis, incluindo gráficos de pizza, histogramas
+diagramas de caixa, gráficos de dispersão, e distribuições. Boa interpretação leva a pro-
+decisões de negócios produtivos, enquanto a análise má interpretação pode perder utilizar-
+informações ful. Normalmente, quanto mais simples a interpretação do gráfico, o mais fácil
+é para os usuários finais de entender.
+Os resultados do estudo de mineração de dados precisam ser comunicados ao projecto pa-
+sores. O estudo de mineração de dados, descobriu um novo conhecimento, que precisa
+ser vinculados aos dados originais metas do projeto de mineração. Gestão será, então, em
+condições de aplicar esta nova compreensão de seu ambiente de negócios.
+É importante que o conhecimento ganho a partir de uma exploração de dados especial
+estudar ser monitorados para a mudança. Comportamento do consumidor muda com o tempo, e
+o que era verdade, durante o período em que os dados foram coletados pode ter al-
+pronto a mudança. Se ocorrer mudanças fundamentais, o conhecimento é descoberto
+atrás de padrões seqüenciais são regras lógicas, lógica fuzzy, e assim por diante. Como
+Avaliação
+Desenvolvimento
+
+Página 11SEMMA 19
+SEMMA
+A fim de ser aplicado com sucesso, a solução de extracção de dados deve ser
+visto como um processo e não um conjunto de ferramentas ou técnicas. Além de
+o CRISP-DM, há ainda um outro método conhecido desenvolvido
+pelo Instituto SAS, chamado SEMMA. A SEMMA sigla significa
+s amplo, e xplore, m odify, m odelo, uma ssess. Começando com uma estatística repre-
+amostra representativa de seus dados, SEMMA pretende torná-lo fácil de aplicar
+exploratórias técnicas estatísticas e de visualização, selecionar e transformar
+as variáveis ??mais significativas preditivas, modelar as variáveis ??para prever
+resultados e, finalmente, confirmar a precisão de um modelo. A representação pictórica-
+ção de SEMMA é dada na fig. 2.2.
+Ao avaliar o resultado de cada fase do processo de SEMMA, pode-se
+determinar como modelar novas questões levantadas pelos resultados anteriores, e
+assim proceder de volta para a fase de exploração para o refinamento adicional do
+dados. Isto é, como é o caso em CRISP-DM, SEMMA também accionada por um
+altamente ciclo iterativo experimentação.
+Fig. 2.2. Esquemática SEMMA (original do SAS Institute)
+não é verdade. Portanto, é fundamental que o domínio de interesse ser monitorados
+durante o período de implantação.
+
+Página 1220 2 Processo de Mineração de Dados
+Passos em Processo SEMMA
+Passo 1 (Amostra): Este é o lugar onde uma parte de um grande conjunto de dados (grande o suficiente para
+conter a informação relevante ainda pequeno o suficiente para manipular
+rapidamente) é extraída. Por questões de custo e performance computacional,
+alguns (incluindo o Instituto SAS) defende uma estratégia de amostragem, que
+aplica-se uma amostra confiável, estatisticamente representativa dos dados de detalhes completos.
+No caso de conjuntos de dados de grande dimensão, a extrair uma amostra representativa, em vez
+de todo o volume pode reduzir drasticamente o tempo de processamento necessário
+para obter informações de negócios crucial. Se os padrões gerais aparecem nos dados como
+um todo, estes serão detectáveis ??em uma amostra representativa. Se um nicho (a
+padrão raro) é tão pequena que não é representado em uma amostra e ainda assim tão im-
+portante que influencia a grande figura, que deve ser descoberto usando ex-
+ploratory descrição de métodos de dados. É também aconselhado para criar particionado
+conjuntos de dados para uma melhor avaliação de precisão.
+Formação - utilizado para a montagem do modelo.
+Validação - utilizado para a avaliação e para evitar mais adequado.
+Teste - usado para obter uma avaliação honesta de como um modelo
+generaliza.
+Passo 2 (Explore): Este é o lugar onde o usuário procurou tendências imprevistos
+e anomalias de forma a obter uma melhor compreensão do conjunto de dados. Depois
+amostragem seus dados, o próximo passo é a explorá-las visualmente ou numeri-
+camente para as tendências inerentes ou agrupamentos. Exploração ajuda a refinar e redirecionar
+o processo de descoberta. Se a exploração visual não revelar tendências claras,
+pode-se explorar os dados através de técnicas estatísticas, incluindo fator
+análise, análise de correspondência, e clustering. Por exemplo, em dados
+mineração para uma campanha de mala direta, clustering pode revelar grupos de cus-
+tes com diferentes padrões de ordenação. Limitar o processo de descoberta para
+cada um destes grupos distintos individualmente pode aumentar a probabilidade de
+explorar padrões mais ricos que podem não ser forte o suficiente para ser detectado se
+todo o conjunto de dados está a ser tratados em conjunto.
+Passo 3 (Modificar): Este é o lugar onde o usuário cria, seleciona e transforma a
+variáveis ??sobre as quais a focalizar o processo de construção do modelo. Com base na
+descobertas na fase de exploração, pode-se precisar de manipular dados para em-
+cluir informação tal como o agrupamento de clientes e significativa sub-
+grupos, ou a introdução de novas variáveis. Também pode ser necessário para procurar
+outliers e reduzir o número de variáveis, para restringi-las para o
+os mais significativos. Pode-se também necessário modificar os dados quando o "minadas"
+
+Página 13SEMMA 21
+alteração de dados. Porque a mineração de dados é um processo dinâmico e iterativo, você pode
+actualização dos métodos de mineração de dados ou modelos quando houver informação disponível.
+Passo 4 (Modelo): Este é o lugar onde o usuário procura uma combinação variável que
+confiável prevê um resultado desejado. Uma vez que você preparar seus dados, você está pronto
+para a construção de modelos que explicam os padrões nos dados. Técnicas de modelagem em
+mineração de dados incluem redes neurais artificiais, árvores de decisão, jogo bruto aná-
+sis, Support Vector Machines, modelos de logística, e outros modelos estatísticos -
+tais como análise de séries temporais componentes, baseado em memória, raciocínio e principal
+análise permanente. Cada tipo de modelo tem vantagens particulares e é apropriada
+em determinadas situações de mineração de dados, dependendo dos dados. Por exemplo, o ar-
+tificial redes neurais são muito bons em montagem altamente complexa não-linear rela-
+ções enquanto a análise conjuntos áspera é saber para produzir resultados confiáveis ??com
+incertas e imprecisas situações-problema.
+Passo 5 (Avalie): Este é o lugar onde o usuário avalia a utilidade ea reli-
+capacidade dos resultados do processo de mineração de dados. Nesta etapa final dos dados
+usuário processo de mineração avalia os modelos para estimar o quão bem ele executa. A
+meios comuns de avaliação de um modelo é aplicá-la a uma porção do conjunto de dados colocado
+lado (e não usado durante a construção do modelo) durante a fase de amostragem. Se
+o modelo é válida, deve funcionar para esta amostra reservado, bem como para o
+amostra utilizada para construir o modelo. Da mesma forma, você pode testar o modelo
+com os dados conhecidos. Por exemplo, se você sabe que os clientes em um arquivo
+tinham elevadas taxas de retenção e de seu modelo prevê a retenção, você pode verificar
+Fig. 2,3. Resultados da enquete - metodologia de mineração de dados (conduzida por KDNuggets.com
+em abril de 2004)
+
+Página 1422 2 Processo de Mineração de Dados
+para ver se o modelo seleciona esses clientes com precisão. Além disso,
+aplicações práticas do modelo, tais como correspondências parciais em uma mala direta
+campanha, ajudar a provar sua validade. A mineração de dados web-site KDNuggets
+desde que os dados apresentados na Fig. 2,3 sobre o uso relativo de mineração de dados
+metodologias.
+A abordagem SEMMA é totalmente compatível com o CRISP-ap
+Exemplo Application Data processo de mineração
+Nayak e Qiu (2005) demonstrou o processo de mineração de dados em um Austra-
+lian projeto de desenvolvimento de software.
+2
+Vamos primeiro relacionar o seu proc-relatada
+ess, e depois comparar com os quadros nítidos e SEMMA.
+Tabela 2.1. Atributos selecionados a partir de relatórios de problemas
+Atributo
+Descrição
+Sinopse
+Principais questões
+Indivíduos responsabilidade atribuída
+Confidencialidade Sim ou não
+Ambiente
+Windows, Unix, etc
+Solte nota
+Fixação comentário
+Trilha de auditoria
+Andamento do processo
+Data de chegada
+Feche data
+Gravidade
+Texto descrevendo o bug e impacto no sistema
+Prioridade
+Alto, Médio, Baixo
+Estado
+Aberto, ativo, Analisados, suspenso, fechado, Resolvido Feedback,
+Classe
+Sw-bug, Doc bug, Mudança pedido-Apoio, Mistaken, Duplicar
+2
+R. Nayak, Tian Qiu (2005). Uma aplicação de mineração de dados: Análise de problemas
+que ocorrem durante o processo de desenvolvimento de projetos de software, International Journal
+de Engenharia de Software 15:4, 647-663.
+dagem. Ambos ajuda o processo de descoberta de conhecimento. Uma vez que os modelos estão
+obtidas e testadas, que podem ser empregados a ganhar valor com respeito
+ao negócio ou aplicação de pesquisa.
+The project owner was an international telecommunication com-
+pany which undertook over 50 software projects annually. Processos
+were organized for Software Configuration Management, Software Risk
+Management, Software Project Metric Reporting, and Software Prob-
+lem Report Management. Nayak and Qiu were interested in mining the
+
+Página 15Example Data Mining Process Application 23
+The data mining process reported included goal definition, data pre-
+processing, data modeling, and analysis of results.
+1. Goal Definition
+Data mining was expected to be useful in two areas. The first involved
+the early estimation and planning stage of a software project, company
+engineers have to estimate the number of lines of code, the kind of
+documents to be delivered, and estimated times. Accuracy at this stage
+would vastly improve project selection decisions. Little tool support
+was available for these activities, and estimates of these three attributes
+were based on experience supported by statistics on past projects. Assim
+projects involving new types of work were difficult to estimate with
+confiança. The second area of data mining application concerned the
+data collection system, which had limited information retrieval capabil-
+dade. Data was stored in flat files, and it was difficult to gather informa-
+tion related to specific issues.
+2. Data Pre-Processing
+This step consisted of attribute selection, data cleaning, and data transfor-
+mação.
+Whenever a problem report was created, the project leader had to de-
+termine how long the fix took, how many people were involved, customer
+impact severity, impact on cost and schedule, and type of problem (soft-
+ware bug or design flaw). Thus the attributes listed below were selected as
+most important:
+Gravidade
+Prioridade
+Classe
+data from the Software Problem Reports. All problem reports were col-
+lected throughout the company (over 40,000 reports). For each report, data
+was available to include data shown in Table 2.1:
+Data Field Selection: Some of the data was not pertinent to the data min-
+ing exercise, and was ignored. Of the variables given in Table 2.1, Con-
+fidentiality, Environment, Release note, and Audit trail were ignored as
+having no data mining value. They were, however, used during pre-
+processing and post-processing to aid in data selection and gaining better
+understanding of rules generated. For data stability, only problem reports
+for State values of Closed were selected.
+
+Página 1624 2 Data Mining Process
+Arrival-Date
+Close-Date
+Responsável
+Sinopse
+The first five attributes had fixed values, and the Responsible attribute
+was converted to a count of those assigned to the problem. All of these at-
+tributes could be dealt with through conventional data mining tools. Syn-
+opsis was text data requiring text mining. Class was selected as the target
+attribute, with the possible outcomes given in Table 2.2:
+Table 2.2. Class outcomes
+Sw-bug
+Bug from software code implementation
+Doc-bug
+Bug from documents directly related to the software product
+Change-request Customer enhancement request
+Apoiar
+Bug from tools or documents, not the software product itself
+Equivocado
+Error in either software or document
+Duplicar
+Problem already covered in another problem report
+Data Cleaning: Cleaning involved identification of missing, inconsis-
+tent, or mistaken values. Tools used in this process step included graphical
+tools to provide a picture of distributions, and statistics such as maxima,
+minima, mean values, and skew. Some entries were clearly invalid, caused
+by either human error or the evolution of the problem reporting system.
+For instance, over time, input for the Class attribute changed from SW-bug
+to sw-bug. Those errors that were correctable were corrected. If all errors
+detected for a report were not corrected, that report was discarded from the
+estudo.
+Data Transformation: The attributes Arrival-Date and Close-Date were
+useful in this study to calculate the duration. Additional information was
+required, to include time zone. The Responsible attribute contained infor-
+mation identified how many people were involved. An attribute Time-to-
+fix was created multiplying the duration times the number of people, and
+then categorized into discrete values of 1 day, 3 days, 7 days, 14 days, 30
+days, 90 days, 180 days, and 360 days (representing over one person-year).
+In this application, 11,000 of the original 40,000 problem reports
+were left. They came from over 120 projects completed over the period
+1996–2000. Four attributes were obtained:
+
+Página 17Example Data Mining Process Application 25
+Time-to-fix
+Classe
+Gravidade
+Prioridade
+Text-mining was applied to 11,364 records, of which 364 had no time
+values so 11,000 were used for conventional data mining classification.
+3. Data Modeling
+Data mining provides functionality not provided by general database query
+techniques, which can't deal with the large number of records with high
+dimensional structures. Data mining provided useful functionality to an-
+swer questions such as the type of project documents requiring a great deal
+of development team time for bug repair, or the impact for various attrib-
+ute values of synopsis, severity, priority, and class. A number of data min-
+ing tools were used.
+Prediction modeling was useful for evaluation of time consumption,
+giving sounder estimates for project estimation and planning.
+Link analysis was useful in discovering associations between attribute
+valores.
+Text mining was useful in analyzing the Synopsis field.
+Data mining software CBA was used for both classification and associa-
+tion rule analysis, C5 for classification, and TextAnalyst for text mining.
+An example classification rule was:
+IF Severity non-critical AND Priority medium
+THEN Class is Document with 70.72% confidence with support value of 6.5%
+There were 352 problem reports in the training data set having these
+conditions, but only 256 satisfied the rule's conclusion.
+Another rule including time-to-fix was more stringent:
+IF 21 time-to-fix 108
+AND Severity non-critical AND Priority medium
+THEN Class is Document with 82.70% confidence with support value of 2.7%
+There were 185 problem reports in the training data set with these con-
+ditions, 153 of which satisfied the rule's conclusion.
+
+Página 1826 2 Data Mining Process
+4. Analysis of Results
+Classification and Association Rule Mining: Data was stratified using
+choice-based sampling rather than random sampling. This provided an
+equal number of samples for each target attribute field value. Este im-
+proved the probability of obtaining rules for groups with small value
+counts (thus balancing the data). Three different training sets of varying
+size were generated. The first data set included 1,224 problem reports
+from one software project. The second data set consisted of equally dis-
+tributed values from 3,400 problem reports selected from all software
+projetos. The third data set consisted of 5,381 problem reports selected
+from all projects.
+Minimum support and confidence were used to control rule model-
+ing. Minimum support is a constraint requiring at least the stated num-
+ber of cases be present in the training set. A high minimum support will
+yield fewer rules. Confidence is the strength of a rule as measured by
+the correct classification of cases. In practice, these are difficult to set
+ahead of analysis, and thus combinations of minimum support and con-
+fidence were used.
+In this application, it was difficult for the CBA software to obtain cor-
+rect classification on test data above 50%. The use of equal density of
+cases was not found to yield more accurate models in this study, although
+it appears a rational approach for further investigation. Using multiple
+support levels was also not found to improve error rates, and single sup-
+port mining yielded a smaller number of rules. However, useful rules
+foram obtidos.
+C5 was also applied for classification mining. C5 used cross valida-
+tion, which splits the dataset into subsets (folds), treating each fold as a
+test case and the rest as training sets in hopes of finding a better result
+than a single training set process. C5 also has a boosting option, which
+generates and combines multiple classifiers in efforts to improve pre-
+dictive accuracy. Here C5 yielded larger rule sets, with slightly better
+fits with training data, although at roughly the same level. Cross valida-
+tion and boosting would not yield additional rules, but would focus on
+more accurate rules.
+Text Mining: Pure text for the Synopsis attribute was categorized into a se-
+ries of specific document types, such as “SRS – missing requirements”
+(with SRS standing for software requirement specification), “SRS – ability
+diante. TextAnalyst was used. This product builds a semantic network for
+text data investigation. Each element in the semantic network is assigned a
+to turn off sending of SOH”, “Changes needed to SCMP_2.0.0” and so
+
+Página 19Comparison of CRISP & SEMMA 27
+weight value, and relationships to other elements in the network, which are
+also assigned a weight value. Users are not required to specify predefined
+rules to build the semantic network. TextAnalyst provided a semantic net-
+work tree containing the most important words or word combinations
+(concepts), and reported relations and weights among these concepts rang-
+ing from 0 to 100, roughly analogous to probability. Text mining was ap-
+plied to 11,226 cases.
+Comparison of CRISP & SEMMA
+The Nayak and Qiu case demonstrates a data mining process for a specific
+application, involving interesting aspects of data cleaning and transforma-
+tion requirements, as well as a wide variety of data types, to include text.
+CRISP and SEMMA were created as broad frameworks, which need to be
+adapted to specific circumstances (see Table 2.3). We will now review
+how the Nayak and Qiu case fits these frameworks.
+Nayak and Qiu started off with a clearly stated set of goals – to de-
+velop tools that would better utilize the wealth of data in software project
+problem reports.
+They examined data available, and identified what would be useful.
+Much of the information from the problem reports was discarded.
+SEMMA includes sampling efforts here, which CRISP would include in
+data preparation, and which Nayak and Qiu accomplished after data
+transformação. Training and test sets were used as part of the software
+aplicação.
+Table 2.3. Comparison of methods
+CRISP
+SEMMA
+Nayak & Qiu
+Business understanding Assumes well-
+defined question
+Goals were defined
+Develop tools to better utilize
+problem reports
+Compreensão de dados
+S ample
+E xplore
+Looked at data in problem reports
+Preparação de dados
+M odify data
+Data pre-processing
+Data cleaning
+Data transformation
+Modelagem
+M odel
+Data modeling
+Avaliação
+A ssess
+Analyzing results
+Desenvolvimento
+
+Página 2028 2 Data Mining Process
+CRISP addresses the deployment of data mining models, which is im-
+plicit in any study. Nayak and Qiu's models were presumably deployed,
+but that was not addressed in their report.
+Manipulação de dados
+A recent data mining study in insurance applied a knowledge discovery
+processo.
+3
+This process involved iteratively applying the steps that we
+covered in CRISP-DM, and demonstrating how the methodology can
+work in practice.
+Fase 1. Business Understanding
+A model was needed to predict which customers would be insolvent early
+enough for the firm to take preventive measures (or measures to avert los-
+ing good customers). This goal included minimizing the misclassification
+of legitimate customers.
+In this case, the billing period was 2 months. Customers used their
+phone for 4 weeks, and received bills about 1 week later. Payment was due
+a month after the date of billing. In the industry, companies typically gave
+customers about 2 weeks after the due-date before taking action, at which
+time the phone was disconnected if the unpaid bill was greater than a set
+3
+S. Daskalaki, I. Kopanas, M. Goudara, N. Avouris (2003). Data mining for deci-
+sion support on customer insolvency in the telecommunications business, Euro-
+pean Journal of Operational Research 145, 239–255.
+Data was cleaned, and reports with missing observations were discarded
+a partir do estudo. Data preparation involved data transformation. Especifi-
+cally, they used two problem report attributes to generate project duration,
+which was further transformed by multiplying by the number of people as-
+signed (available by name, but only counts were needed). A resultante
+measure of effort was further transformed into categories that reflected
+relative importance without cluttering detail.
+Modeling included classification and association rule analysis from the
+first software tool (CBA), a replication of classification with C5, and inde-
+pendent text analysis with TextAnalyst. Nayak and Qiu generated a variety
+of models by manipulating minimum support and confidence levels in the
+software.
+Evaluation (assessment) was accomplished by Nayak and Qiu through
+analysis of results in terms of the number of rules, as well as accuracy of
+classification models as applied to the test set.
+
+Página 21Handling Data 29
+montante. Bills were sent every month for another 6 months, during which
+period the late customer could make payment arrangements. If no payment
+was received at the end of this 6-month period, the unpaid balance was
+transferred to the uncollectible category.
+This study hypothesized that insolvent customers would change their
+calling habits and phone usage during a critical period before and immedi-
+ately after termination of the billing period. Changes in calling habits,
+combined with paying patterns were tested for their ability to provide
+sound predictions of future insolvencies.
+Fase 2. Data Understanding
+Static customer information was available from customer files. Time-
+dependent data was available on bills, payments, and usage. Data came from
+several databases, but all of these databases were internal to the company. A
+data warehouse was built to gather and organize this data. The data was
+coded to protect customer privacy. Data included customer information,
+phone usage from switching centers, billing information, payment reports by
+customer, phone disconnections due to a failure to pay, phone reconnections
+after payment, and reports of permanent contract nullifications.
+Data was selected for 100,000 customers covering a 17-month period,
+and was collected from one rural/agricultural region of customers, a semi-
+rural touring area, and an urban/industrial area in order to assure represen-
+tative cross-sections of the company's customer base. The data warehouse
+used over 10 gigabytes of storage for raw data.
+Stage 3. Data Preparation
+The data was tested for quality, and data that wasn't useful for the study
+was filtered out. Heterogeneous data items were interrelated. As examples,
+it was clear that inexpensive calls had little impact on the study. Esta al-
+lowed a 50% reduction in the total volume of data. The low percentage of
+fraudulent cases made it necessary to clean the data from missing or erro-
+neous values due to different recording practices within the organization
+and the dispersion of data sources. Thus it was necessary to cross-check
+data such as phone disconnections. The lagged data required synchroniza-
+tion of different data elements.
+Data synchronization revealed a number of insolvent customers with
+missing information that had to be deleted from the data set. It was thus
+necessary to reduce and project data, so information was grouped by ac-
+count to make data manipulation easier, and customer data was aggregated
+
+Página 2230 2 Data Mining Process
+by 2-week periods. Statistics were applied to find characteristics that were
+discriminant factors for solvent versus insolvent customers. Data included
+o seguinte:
+Telephone account category (23 categories, such as payphone, business,
+e assim por diante).
+Average amount owed was calculated for all solvent and insolvent
+clientes. Insolvent customers had significantly higher averages across
+all categories of account.
+Extra charges on bills were identified by comparing total charges for
+phone usage for the period as opposed to balances carried forward or
+purchases of hardware or other services. This also proved to be
+statistically significant across the two outcome categories.
+Payment by installments was investigated. However, this variable was
+not found to be statistically significant.
+Stage 4. Modelagem
+The prediction problem was classification, with two classes: most possibly
+solvent (99.3% of the cases) and most possibly insolvent (0.7% of the
+casos). Thus, the count of insolvent cases was very small in a given billing
+período. The costs of error varied widely in the two categories. Isto tem
+been noted by many as a very difficult classification problem.
+A new dataset was created through stratified sampling for solvent cus-
+tomers, altering the distribution of customers to be 90% solvent and 10%
+insolvente. All of the insolvent cases were retained, while care was taken
+to maintain a proportional representation of the solvent set of data over
+variables such as geographical region. A dataset of 2,066 total cases was
+desenvolvido.
+A critical period for each phone account was established. For those ac-
+counts that were nullified, this critical period was the last 15 two-week pe-
+riods prior to service interruption. For accounts that remained active, the
+critical period was set as a similar period to possible disruption. Lá
+were six possible disruption dates per year. For the active accounts, one of
+these six dates was selected at random.
+For each account, variables were defined by counting the appropriate
+measure for every 2-week period in the critical period for that observation.
+At the end of this phase, new variables were created to describe phone
+usage by account compared to a moving average of four previous 2-week
+períodos. At this stage, there were 46 variables as candidate discriminating
+factores. These variables included 40 variables measured as call habits over
+
+Página 23Handling Data 31
+15 two-week periods, as well as variables concerning the type of customer,
+whether or not a customer was new, and four variables relating to customer
+bill payment.
+Discriminant analysis, decision trees and neural network algorithms
+were used to test hypotheses over the reduced data set of 2,066 cases
+measured over 46 variables. Discriminant analysis yielded a linear model,
+the neural network came out as a nonlinear model, and the decision tree
+was a rule-based classifier.
+Stage 5. Avaliação
+Experiments were conducted to test and compare performance. Os dados
+set was divided into a training set (about two-thirds of the 2,066 cases) and
+test set (the remaining cases). Classification errors are commonly dis-
+played in coincidence matrices (called confusion matrices by some). A co-
+incidence matrix shows the count of cases correctly classified, as well as
+the count of cases classified in each incorrect category. But in many data
+mining studies, the model may be very good at classifying one category,
+while very poor at classifying another category. The primary value of the
+coincidence matrix is that it identifies what kinds of errors are made. Ele
+may be much more important to avoid one kind of error than another. Para
+instance, a bank loan officer suffers a great deal more from giving a loan to
+someone who's expected to repay and does not than making the mistake of
+not giving a loan to an applicant who actually would have paid. Both in-
+stances would be classification errors, but in data mining, often one cate-
+gory of error is much more important than another. Coincidence matrices
+provide a means of focusing on what kinds of errors particular models tend
+to make.
+A way to reflect relative error importance is through cost. This is a rela-
+tively simple idea, allowing the user to assign relative costs by type of er-
+ror. For instance, if our model predicted that an account was insolvent, that
+might involve an average write-off of $200. On the other hand, waiting for
+an account that ultimately was repaid might involve a cost of $10. Assim,
+there would be a major difference in the cost of errors in this case. Tratar
+a case that turned out to be repaid as a dead account would risk the loss of
+$190, in addition to alienating the customer (which may or may not have
+future profitability implications). Conversely, treating an account that was
+never going to be repaid may involve carrying the account on the books
+longer than needed, at an additional cost of $10. Here, a cost function for
+the coincidence matrix could be:
+$190 (closing good account) + $10 (keeping bad account open)
+
+Página 2432 2 Data Mining Process
+(Note that we used our own dollar costs for purposes of demonstration, and
+these were not based on the real case.) This measure (like the correct clas-
+sification rate) can be used to compare alternative models.
+SPSS was used for discriminant analysis, including a stepwise forward
+selection procedure. The best model included 17 of the available 46 vari-
+veis. Using equal misclassification costs yielded the coincidence matrix
+shown in Table 2.4.
+Table 2.4. Coincidence matrix – equal misclassification costs
+Telephone bill
+Model insolvent
+Model solvent
+Actual Insolvent
+50
+14
+64
+Actual Solvent
+76
+578
+654
+126
+593
+718
+Overall classification accuracy is obtained by dividing the correct num-
+ber of classifications (50 + 578 = 628) by the total number of cases (718).
+Thus, the test data was correctly classified in 87.5. The cost function value
+here was:
+$190 76 + $10 14 = $14,580
+The high proportion of actually solvent cases classified as insolvent was
+judged to be unacceptable, because it would chase away too many good
+clientes. The experiment was reconducted using a-priori probabilities.
+This improved output significantly, as shown in the coincidence matrix in
+Tabela 2.5.
+Table 2.5. Coincidence matrix – unequal misclassification costs
+Telephone bill
+Model insolvent Model solvent
+Actual Insolvent 36
+28
+64
+Actual Solvent
+22
+632
+654
+58
+660
+718
+The test data was correctly classified in 93.0% of the cases. Para o
+training data, this figure was 93.6%. Models usually fit training data a little
+better than test data, but that's because they were built on training data. In-
+dependent test data provides a much better test. The accuracy for insolvent
+customers, which is very important because it costs so much more, de-
+creased from 78% in the training data to 56% in the test data. O custo
+function value here was the following:
+$190 22 + $10 28 = $4,460
+
+Página 25Handling Data 33
+From a total cost perspective, the model utilizing unequal misclassifica-
+tion costs (using real costs) was considered more useful.
+The 17 variables identified in the discriminant analysis were used for
+the other two models. The same training and test sets were employed. O
+training set was used to build a rule-based classifier model. The coinci-
+dence matrix for the test set is shown in Table 2.6.
+Table 2.6. Coincidence matrix – the rule-based model
+Telephone bill
+Model insolvent
+Model solvent
+Actual Insolvent
+38
+26
+64
+Actual Solvent
+8
+646
+654
+46
+672
+718
+Thus the test data was correctly classified in 95.26% of the cases. Para
+the training data, this figure was 95.3%. The cost function value here was
+$190 8 + $10 26 = $1,780
+This was an improvement over the discriminant analysis model.
+A number of experiments were conducted with a neural network model
+using the same 17 variables and training set. The resulting coincidence ma-
+trix over the test data is shown in Table 2.7.
+Table 2.7. Coincidence matrix – the neural network model
+Telephone bill
+Model insolvent
+Model solvent
+Actual Insolvent
+24
+40
+64
+Actual Solvent
+11
+643
+654
+35
+683
+718
+The test data was correctly classified in 92.9% of the cases. Para o
+training data, this figure was 94.1%. The cost function value here was
+$190 11 + $10 40 = $2,490
+However, these results were inferior to that of the decision tree model.
+The first objective was to maximize accuracy of predicting insolvent
+clientes. The decision tree classifier appeared to be best at doing that.
+The second objective was to minimize the error rate for solvent customers.
+The neural network model was close to the performance of the decision
+tree model. It was decided to use all three models on a case-by-case basis.
+
+Página 2634 2 Data Mining Process
+Stage 6. Desenvolvimento
+Every customer was examined using all three algorithms. If all three
+agreed on classification, that result was adopted. If there was disagree-
+ment in the model results, the customer was categorized as unclassified.
+Using this scheme over the test set yielded the coincidence matrix shown
+in Table 2.8.
+Table 2.8. Coincidence matrix – combined models
+Telephone bill
+Model insolvent
+Model solvent
+Unclassified
+Total
+Actual Insolvent
+19
+17
+28
+64
+Actual Solvent
+1
+626
+27
+654
+20
+643
+91
+718
+Thus, the test data was correctly classified in 89.8% of the cases. Mas
+only one actually solvent customer would have been disconnected without
+análise adicional. The cost function value here was
+$190 1 + $10 17 = $360
+The steps used in this application match the six stages we have pre-
+apresentadas. Data Selection relates to Learning the application domain and
+Creating a target dataset. Data Preprocessing involves Data Cleaning and
+pré-processamento. Data Transformation involves Data Reduction and projec-
+ção. Data Mining was expanded in the earlier application to include
+(1) choosing the function of data mining, (2) choosing the data mining al-
+gorithms, and (3) data mining. Data Interpretation involves the interpreta-
+tion and use of discovered knowledge.
+Resumo
+The industry-standard CRISP-DM data mining process has six stages:
+(1) Business Understanding, (2) Data Understanding, (3) Data Prepara-
+tion, (4) Modeling, (5) Evaluation, and (6) Deployment. Data selection
+and understanding, preparation, and model interpretation require team-
+work between data mining analysts and business analysts, while data
+transformation and data mining are conducted by data mining analysts
+sozinho. Each stage is a preparation for the next stage. No restante
+
+Página 27Summary 35
+chapters of this book, we'll discuss details regarding this process from
+a different perspective, such as data mining tools and applications. Este
+will provide the reader with a better understanding as to why the cor-
+rect process sometimes is even more important than the correct per-
+formance of the methodology.
+
+Página 28http://www.springer.com/978-3-540-76916-3
+

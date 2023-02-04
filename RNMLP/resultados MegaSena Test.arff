@@ -1,0 +1,27 @@
+%
+@relation 'MegaSena'
+@attribute Concurso real
+@attribute DataSorteio real
+@attribute 1Dezena real
+@attribute 2Dezena real
+@attribute 3Dezena real
+@attribute 4Dezena real
+@attribute 5Dezena real
+@attribute 6Dezena real
+@attribute ArrecadacaoTotal real
+@attribute GanhadoresSena real
+@attribute RateioSena real
+@attribute GanhadoresQuina real
+@attribute RateioQuina real
+@attribute GanhadoresQuadra real
+@attribute RateioQuadra real
+@attribute Acumulado {SIM, NAO}
+@attribute ValorAcumulado real
+@attribute EstimativaPremio real
+@attribute AcumuladoMegadaVirada real
+@data
+1544,11112013,41,5,4,52,30,33,0,0,0,17,39158.92,2016,330.21,SIM,1714650.23,0,0
+1545,18112013,9,39,37,49,43,41,0,1,2307162.23,65,14424.02,4488,208.91,NAO,0,0,0
+1546,25112013,36,30,10,11,29,47,0,2,391192.51,62,10515.93,4261,153.01,NAO,0,0,0
+1547,01122013,6,59,42,27,1,5,0,0,0,39,15322.24,3311,180.48,SIM,717080.75,0,0
+1548,08122013,1,19,46,6,16,2,0,0,0,98,5318.10,5399,96.53,SIM,1342488.85,0,0

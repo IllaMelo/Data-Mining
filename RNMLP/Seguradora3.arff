@@ -1,0 +1,11 @@
+%
+@relation 'Seguradora3'
+@attribute sexo {F,M}
+@attribute faixa_etaria {<25,25-30,31-40,>40}
+@attribute acidente {Sim,Nao}
+@data
+F,>40,?
+M,>40,?
+F,<25,?
+M,>40,?
+F,25-30,?

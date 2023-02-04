@@ -1,0 +1,11 @@
+%
+@relation 'cpu'
+@attribute MYCT real
+@attribute MMIN real
+@attribute MMAX real
+@attribute CACH real
+@attribute CHMIN real
+@attribute CHMAX real
+@attribute class real
+@data
+85,900,2000,348,70,50,170

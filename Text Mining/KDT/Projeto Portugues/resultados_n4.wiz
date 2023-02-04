@@ -1,0 +1,22 @@
+banco de dados;8;72,7/
+composicao;11;100,0/
+data;9;81,8/
+fotografia;5;45,5/
+ia;8;72,7/
+quality;9;81,8/
+--100,00% dos textos que falam em banco de dados também falam em composicao. Isto aconteceu em 0008 texto(s) (72,73% do total)
+--100,00% dos textos que falam em banco de dados também falam em data. Isto aconteceu em 0008 texto(s) (72,73% do total)
+--100,00% dos textos que falam em banco de dados também falam em ia. Isto aconteceu em 0008 texto(s) (72,73% do total)
+--100,00% dos textos que falam em fotografia também falam em quality. Isto aconteceu em 0004 texto(s) (36,36% do total)
+--88,89%  dos textos que falam em data também falam em ia. Isto aconteceu em 0008 texto(s) (72,73% do total)
+--87,50%  dos textos que falam em banco de dados também falam em quality. Isto aconteceu em 0007 texto(s) (63,64% do total)
+--87,50%  dos textos que falam em ia também falam em quality. Isto aconteceu em 0007 texto(s) (63,64% do total)
+--81,82%  dos textos que falam em composicao também falam em data. Isto aconteceu em 0009 texto(s) (81,82% do total)
+--77,78%  dos textos que falam em data também falam em quality. Isto aconteceu em 0007 texto(s) (63,64% do total)
+--75,00%  dos textos que falam em fotografia também falam em ia. Isto aconteceu em 0003 texto(s) (27,27% do total)
+--72,73%  dos textos que falam em composicao também falam em ia. Isto aconteceu em 0008 texto(s) (72,73% do total)
+--72,73%  dos textos que falam em composicao também falam em quality. Isto aconteceu em 0008 texto(s) (72,73% do total)
+--37,50%  dos textos que falam em banco de dados também falam em fotografia. Isto aconteceu em 0003 texto(s) (27,27% do total)
+--36,36%  dos textos que falam em composicao também falam em fotografia. Isto aconteceu em 0004 texto(s) (36,36% do total)
+--33,33%  dos textos que falam em data também falam em fotografia. Isto aconteceu em 0003 texto(s) (27,27% do total)
+
